@@ -14,13 +14,15 @@
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
     "start": "node ./bin/www",
-    "prepare": "husky install"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "coverage": "npm run test -- --coverage"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "jest": "^27.5.1",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
   },
@@ -29,16 +31,20 @@
   "devDependencies": {
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.4",
     "husky": "^7.0.0",
     "lint-staged": "^12.3.8",
     "prettier": "2.6.2"
   },
   "husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.js": ["npm run lint", "npm run prettier:fix"]
-	}
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "npm run prettier:fix"
+    ]
+  }
 }
