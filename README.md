@@ -15,7 +15,7 @@ Starter project for building a RESTful API using Express
 
 ### Running locally:
 ```
-npm run start
+npm run dev
 ```
 
 ### Formating code:

@@ -13,9 +13,10 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
-    "start": "node ./bin/www",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "coverage": "npm run test -- --coverage"
+    "coverage": "npm run test -- --coverage",
+    "start": "node ./bin/www",
+    "dev": "DEBUG=node-express-boilerplate:* npm start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
