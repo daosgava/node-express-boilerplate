@@ -1,6 +1,6 @@
 # Node Express Boilerplate
 
-Starter project for building a RESTful API using Express
+Starter project for building a RESTful API using Express.
 
 ## Features
 
