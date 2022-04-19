@@ -20,19 +20,22 @@ npm run start
 
 ### Formating code:
 ```
-# Run lint
+# Run ESLint
 npm run lint
+
+# Fix ESLint issues
+npm run lint:fix
 
 # Run prettier
 npm run prettier
 
-# Fix format:
+# Fix prettier issues
 npm run prettier:fix
 ```
 
 ### Testing:
 ```
-# Run test
+# Run tests
 npm run test
 
 # Run test coverage
